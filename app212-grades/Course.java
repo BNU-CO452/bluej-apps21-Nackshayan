@@ -17,6 +17,7 @@ public class Course
     
     private Grades finalGrade;
      
+    
     public Course()
     {
         this("G400", "BSc Computing");
@@ -42,7 +43,7 @@ public class Course
      * must be your four modules.
      */
     public void createModules()
-    {
+    {Module moduleC0452 = new Module("C0452"), "Programming concepts")addmodule(moduleC0452);
 
     }
     
@@ -88,7 +89,14 @@ public class Course
      * Print the course's four modules
      */
     public void printModules()
-    {
+
+    { 
+        System.out.println("Course Modules");
+        System.out.println("--------------");
         System.out.println();
+        for(Module module : modules)
+        
+        System.out.println();
+        
     }
 }
