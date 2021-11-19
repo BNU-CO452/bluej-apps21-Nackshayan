@@ -1,0 +1,140 @@
+StockList WineStock = new StockList();
+StockDemo WineDemo = new StockDemo();
+
+ Nackshayan's Stock List
+ ====================
+
+ ID 101: RedWine stock level: 0
+ ID 102: AppleWine stock level: 0
+ ID 103: GrapesWine stock level: 0
+ ID 104: OrangeWine stock level: 0
+ ID 105: whiteWines stock level: 0
+ ID 106: RoseWine stock level: 0
+ ID 107: SparklingWine stock level: 0
+ ID 108: DesertWine stock level: 0
+ ID 109: FortifiedWine stock level: 0
+ ID 110: MerlotWine stock level: 0
+
+Bought 1500ofRedWine
+Bought 2500ofAppleWine
+Bought 8000ofGrapesWine
+Bought 100ofOrangeWine
+Bought 800ofwhiteWines
+Bought 1700ofRoseWine
+Bought 1950ofSparklingWine
+Bought 150ofDesertWine
+Bought 1000ofFortifiedWine
+Bought 4780ofMerlotWine
+
+ Nackshayan's Stock List
+ ====================
+
+ ID 101: RedWine stock level: 1500
+ ID 102: AppleWine stock level: 2500
+ ID 103: GrapesWine stock level: 8000
+ ID 104: OrangeWine stock level: 100
+ ID 105: whiteWines stock level: 800
+ ID 106: RoseWine stock level: 1700
+ ID 107: SparklingWine stock level: 1950
+ ID 108: DesertWine stock level: 150
+ ID 109: FortifiedWine stock level: 1000
+ ID 110: MerlotWine stock level: 4780
+
+sold 700ofRedWine
+
+ Nackshayan's Stock List
+ ====================
+
+ ID 101: RedWine stock level: 800
+ ID 102: AppleWine stock level: 2500
+ ID 103: GrapesWine stock level: 8000
+ ID 104: OrangeWine stock level: 100
+ ID 105: whiteWines stock level: 800
+ ID 106: RoseWine stock level: 1700
+ ID 107: SparklingWine stock level: 1950
+ ID 108: DesertWine stock level: 150
+ ID 109: FortifiedWine stock level: 1000
+ ID 110: MerlotWine stock level: 4780
+
+WineStock.add(new Product(300, "BlueWine"));
+WineStock.add(new Product(301, "blackWine"));
+WineStock.add(new Product(302, "yellowWine"));
+WineStock.add(new Product(304, "PinkWine"));
+WineStock.add(new Product(305, "GreenWine"));
+WineStock.add(new Product(306, "purbleWine"));
+WineStock.add(new Product(307, "ashWine"));
+WineStock.add(new Product(308, "AmberWine"));
+WineStock.add(new Product(309, "StrongWine"));
+WineStock.add(new Product(310, "LiteWine"));
+WineStock.print();
+
+ Nackshayan's Stock List
+ ====================
+
+ ID 300: BlueWine stock level: 0
+ ID 301: blackWine stock level: 0
+ ID 302: yellowWine stock level: 0
+ ID 304: PinkWine stock level: 0
+ ID 305: GreenWine stock level: 0
+ ID 306: purbleWine stock level: 0
+ ID 307: ashWine stock level: 0
+ ID 308: AmberWine stock level: 0
+ ID 309: StrongWine stock level: 0
+ ID 310: LiteWine stock level: 0
+
+WineStock.buyProduct(300, 50);
+Bought 50ofBlueWine
+WineStock.buyProduct(301, 100);
+Bought 100ofblackWine
+WineStock.buyProduct(302, 200);
+Bought 200ofyellowWine
+WineStock.buyProduct(304, 250);
+Bought 250ofPinkWine
+WineStock.buyProduct(305, 300);
+Bought 300ofGreenWine
+WineStock.buyProduct(306, 500);
+Bought 500ofpurbleWine
+WineStock.buyProduct(307, 600);
+Bought 600ofashWine
+WineStock.buyProduct(308, 800);
+Bought 800ofAmberWine
+WineStock.buyProduct(309, 1500);
+Bought 1500ofStrongWine
+WineStock.buyProduct(310, 2000);
+Bought 2000ofLiteWine
+WineStock.sellProduct(301, 20);
+sold 20ofblackWine
+WineStock.sellProduct(302, 60);
+sold 60ofyellowWine
+WineStock.sellProduct(300, 20);
+sold 20ofBlueWine
+WineStock.sellProduct(304, 100);
+sold 100ofPinkWine
+WineStock.sellProduct(305, 107);
+sold 107ofGreenWine
+WineStock.sellProduct(306, 172);
+sold 172ofpurbleWine
+WineStock.sellProduct(307, 350);
+sold 350ofashWine
+WineStock.sellProduct(308, 200);
+sold 200ofAmberWine
+WineStock.sellProduct(309, 1000);
+sold 1000ofStrongWine
+WineStock.sellProduct(310, 5);
+sold 5ofLiteWine
+WineStock.print();
+
+ Nackshayan's Stock List
+ ====================
+
+ ID 300: BlueWine stock level: 30
+ ID 301: blackWine stock level: 80
+ ID 302: yellowWine stock level: 140
+ ID 304: PinkWine stock level: 150
+ ID 305: GreenWine stock level: 193
+ ID 306: purbleWine stock level: 328
+ ID 307: ashWine stock level: 250
+ ID 308: AmberWine stock level: 600
+ ID 309: StrongWine stock level: 500
+ ID 310: LiteWine stock level: 1995
+
