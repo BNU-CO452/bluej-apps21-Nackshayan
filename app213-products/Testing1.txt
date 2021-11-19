@@ -1,0 +1,199 @@
+Bought 2500ofAppleWine
+Not enough space for GrapesWine. Please sell the remaining stock 
+Bought 100ofOrangeWine
+Bought 800ofwhiteWines
+Bought 1700ofRoseWine
+Bought 1950ofSparklingWine
+Bought 150ofDesertWine
+Bought 1000ofFortifiedWine
+Not enough space for MerlotWine. Please sell the remaining stock 
+
+ Nackshayan's Stock List
+ ====================
+
+ ID 101: RedWine stock level: 3100
+ ID 102: AppleWine stock level: 7500
+ ID 103: GrapesWine stock level: 8000
+ ID 104: OrangeWine stock level: 300
+ ID 105: whiteWines stock level: 2400
+ ID 106: RoseWine stock level: 5100
+ ID 107: SparklingWine stock level: 5850
+ ID 108: DesertWine stock level: 450
+ ID 109: FortifiedWine stock level: 3000
+ ID 110: MerlotWine stock level: 9560
+
+sold 700ofRedWine
+
+ Nackshayan's Stock List
+ ====================
+
+ ID 101: RedWine stock level: 2400
+ ID 102: AppleWine stock level: 7500
+ ID 103: GrapesWine stock level: 8000
+ ID 104: OrangeWine stock level: 300
+ ID 105: whiteWines stock level: 2400
+ ID 106: RoseWine stock level: 5100
+ ID 107: SparklingWine stock level: 5850
+ ID 108: DesertWine stock level: 450
+ ID 109: FortifiedWine stock level: 3000
+ ID 110: MerlotWine stock level: 9560
+
+WineShop.print();
+
+ Nackshayan's Stock List
+ ====================
+
+
+Wines.print();
+ ID 22043338: Wineshop stock level: 0
+Wines.print();
+ ID 22043338: Wineshop stock level: 0
+Wines.print();
+ ID 22043338: Wineshop stock level: 0
+Wines.decreaseQuantity(50);
+Product Wines = new Product(22043338, "WineShop");
+StockList WineShop = new StockList();
+StockDemo Winestockdemo = new StockDemo();
+
+ Nackshayan's Stock List
+ ====================
+
+ ID 101: RedWine stock level: 0
+ ID 102: AppleWine stock level: 0
+ ID 103: GrapesWine stock level: 0
+ ID 104: OrangeWine stock level: 0
+ ID 105: whiteWines stock level: 0
+ ID 106: RoseWine stock level: 0
+ ID 107: SparklingWine stock level: 0
+ ID 108: DesertWine stock level: 0
+ ID 109: FortifiedWine stock level: 0
+ ID 110: MerlotWine stock level: 0
+
+Bought 1500ofRedWine
+Bought 2500ofAppleWine
+Bought 8000ofGrapesWine
+Bought 100ofOrangeWine
+Bought 800ofwhiteWines
+Bought 1700ofRoseWine
+Bought 1950ofSparklingWine
+Bought 150ofDesertWine
+Bought 1000ofFortifiedWine
+Bought 4780ofMerlotWine
+
+ Nackshayan's Stock List
+ ====================
+
+ ID 101: RedWine stock level: 1500
+ ID 102: AppleWine stock level: 2500
+ ID 103: GrapesWine stock level: 8000
+ ID 104: OrangeWine stock level: 100
+ ID 105: whiteWines stock level: 800
+ ID 106: RoseWine stock level: 1700
+ ID 107: SparklingWine stock level: 1950
+ ID 108: DesertWine stock level: 150
+ ID 109: FortifiedWine stock level: 1000
+ ID 110: MerlotWine stock level: 4780
+
+sold 700ofRedWine
+
+ Nackshayan's Stock List
+ ====================
+
+ ID 101: RedWine stock level: 800
+ ID 102: AppleWine stock level: 2500
+ ID 103: GrapesWine stock level: 8000
+ ID 104: OrangeWine stock level: 100
+ ID 105: whiteWines stock level: 800
+ ID 106: RoseWine stock level: 1700
+ ID 107: SparklingWine stock level: 1950
+ ID 108: DesertWine stock level: 150
+ ID 109: FortifiedWine stock level: 1000
+ ID 110: MerlotWine stock level: 4780
+
+Wines.print();
+ ID 22043338: WineShop stock level: 0
+Wines.decreaseQuantity(50);
+Wines.print();
+ ID 22043338: WineShop stock level: 0
+Wines.increaseQuantity(100);
+Wines.print();
+ ID 22043338: WineShop stock level: 100
+Wines.decreaseQuantity(20);
+Wines.print();
+ ID 22043338: WineShop stock level: 80
+WineShop.printProduct(104);
+Wines.print();
+ ID 22043338: WineShop stock level: 80
+Wines.getName()
+    returned String "WineShop"
+WineShop.print();
+
+ Nackshayan's Stock List
+ ====================
+
+
+Product Wine2 = new Product(2204338, "Wines");
+Product product1 = new Product(22043338, "Wines");
+WineShop.print();
+
+ Nackshayan's Stock List
+ ====================
+
+
+StockList stockLis1 = new StockList();
+stockLis1.print();
+
+ Nackshayan's Stock List
+ ====================
+
+
+stockLis1.print();
+
+ Nackshayan's Stock List
+ ====================
+
+
+Product product1 = new Product(2204586, "wine");
+product1.getName()
+    returned String "wine"
+product1.getID()
+    returned int 2204586
+StockList stockLis1 = new StockList();
+Product game1 = new Product(22043338, "Halo");
+Product game2 = new Product(22043338, "seige");
+StockList GAme = new StockList();
+StockList Game1 = new StockList();
+Game1.add(new Product(11, "battle"));
+Game1.add(new Product(21, "field"));
+Game1.print();
+
+ Nackshayan's Stock List
+ ====================
+
+ ID 11: battle stock level: 0
+ ID 21: field stock level: 0
+
+Product WineShop = new Product(22043338, "Redwine");
+WineShop.print();
+ ID 22043338: Redwine stock level: 0
+WineShop.decreaseQuantity(50);
+WineShop.print();
+ ID 22043338: Redwine stock level: 0
+WineShop.increaseQuantity(150);
+WineShop.print();
+ ID 22043338: Redwine stock level: 150
+WineShop.decreaseQuantity(30);
+WineShop.print();
+ ID 22043338: Redwine stock level: 120
+Product Wineshop = new Product(83334022, "Wines2");
+StockList WineStock = new StockList();
+WineStock.add(new Product(788, "rebelowine"));
+WineStock.add(new Product(897, "MangoWine"));
+WineStock.print();
+
+ Nackshayan's Stock List
+ ====================
+
+ ID 788: rebelowine stock level: 0
+ ID 897: MangoWine stock level: 0
+
