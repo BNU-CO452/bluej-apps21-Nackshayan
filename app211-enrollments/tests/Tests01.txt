@@ -1,0 +1,21 @@
+Course Computing = new Course("BT1CTG1 Y1", "BSc (Hons) Computing");
+Computing.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CTG1 Y1: BSc (Hons) Computing
+
+Student Nackshayan = new Student("Nackshayan Mehanathan", 22043338);
+Nackshayan.print();
+ Student ID: 22043338 Name: Nackshayan Mehanathan
+Nackshayan.enrol(Computing);
+Nackshayan.print();
+ Student ID: 22043338 Name: Nackshayan Mehanathan
+Nackshayan.printCourse();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CTG1 Y1: BSc (Hons) Computing
+
