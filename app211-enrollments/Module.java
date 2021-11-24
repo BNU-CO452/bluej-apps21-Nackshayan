@@ -7,27 +7,74 @@
  */
 public class Module
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    // Variables
+    private String code;
+    private String title;
+    private int credit;
 
     /**
      * Constructor for objects of class Module
      */
-    public Module()
-    {
-        // initialise instance variables
-        x = 0;
+    public Module(String code, String title)
+    { 
+        // initialise instance varibales
+        this.code = code;
+        this.title = title;
+        credit = 0;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * This method will printout the Module code and title
+     * 
+     * @param
+     * @return code
      */
-    public int sampleMethod(int y)
+    public String getCode()
     {
-        // put your code here
-        return x + y;
+         return this.code;   
     }
-}
+    /**
+     * This method will printout the Module code and title
+     * 
+     * @param
+     * @return code
+     */
+
+    public String getTitle()
+    {
+         return this.title;   
+    }
+    
+        public int getCredit()
+    {
+         return this.credit;   
+    }
+    
+    public void setCredit(int credit)
+    {
+        this.credit = credit;
+    }
+    
+    /**
+     * Print the details of the course, the list
+     * of students enrolled and the module
+     */
+    public void print()
+    {
+        printHeading();
+        
+        System.out.println(" Module Code: " + code + ": " + title+ "Credit" + credit);
+        System.out.println();
+    }
+    
+    /**
+     * Print out the details of the course to the terminal.
+     */
+    private void printHeading()
+    {
+        System.out.println(" --------------------------------");
+        System.out.println("   App211: Module Details");
+        System.out.println(" --------------------------------");
+        System.out.println();
+    }
+ }
