@@ -1,26 +1,30 @@
-
+import java.util.Random;
 /**
  * Demonstrate the StockManager and Product classes.
  * The demonstration becomes properly functional as
  * the StockManager class is completed.
  * 
- * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * @author Nackshayan
+ * @version 08/12/2025
  */
 public class StockDemo
 {
     // The stock manager.
     private StockList stock;
+    private StockList lowStock;
+    
+    private Random random;
 
     /**
      * Create a StockManager and populate it with at least
      * 10 sample products.
      */
-    public StockDemo()
+    public StockDemo(StockList stock)
     {
-        this.stock = new StockList();
-        
-        
+        this.stock = stock;
+        this.random = new Random();
+        // Add at least 10 products, they must be unique to you
+        // Make sure the ids are sequential numbers
         stock.add(new Product(101, "RedWine"));
         stock.add(new Product(102, "AppleWine"));
         stock.add(new Product(103, "GrapesWine"));
@@ -31,8 +35,6 @@ public class StockDemo
         stock.add(new Product(108, "DesertWine"));
         stock.add(new Product(109, "FortifiedWine"));
         stock.add(new Product(110, "MerlotWine"));
-        
-        
         runDemo();
     }
     
@@ -48,31 +50,69 @@ public class StockDemo
         // Show details of all of the products before delivery.
         
         stock.print();
-
         buyProducts();
         stock.print();        
 
         sellProducts();
-        stock.print();        
+        removeProducts();
+        stock.print();
+        
+        checkStock();
+        
+        searchName("Risk");
     }
     
+    /**
+     * Using the for loop, it loops to each product in the list using the ID, and generating random numbers
+     * up to 2000 which is used to increase the quantity. It call the buyProduct method through the StockList object
+     * "stock".
+     */
     private void buyProducts()
     {
-        stock.buyProduct(101, 1500);
-        stock.buyProduct(102, 2500);
-        stock.buyProduct(103, 8000);
-        stock.buyProduct(104, 100);
-        stock.buyProduct(105, 800);
-        stock.buyProduct(106, 1700);
-        stock.buyProduct(107, 1950);
-        stock.buyProduct(108, 150);
-        stock.buyProduct(109, 1000);
-        stock.buyProduct(110, 4780);
-        
+        for(int i = 101; i <= 110; i++)
+        {
+        stock.buyProduct(i, random.nextInt(2000));
+        }
     }
-
-    private void sellProducts()
+    
+    /**
+     * Using the for loop, it loops to each product in the list using the ID, and generating random numbers
+     * up to 2000 which is used to decrease the quantity. It call the sellProduct method through the StockList object
+     * "stock".
+     */
+     private void sellProducts()
     {
-        stock.sellProduct(101, 700);
-    }    
+        for(int i = 101; i <= 110; i++)
+        {
+        stock.sellProduct(i, random.nextInt(2000));
+        }
+    } 
+    
+    /**
+     * Using the lowPrint() method from the "StockList" class.
+     */
+    private void checkStock()
+    {
+        stock.lowPrint();    
+    }
+    
+    /**
+     * Using the searchName() method from the "StockList" class, with the String param "name"
+     * to look for the object that contains the name.
+     */
+    private void searchName(String name)
+    {
+        stock.printName(name);
+    }
+    
+    /**
+     * Calls removeProducts() from the "StockList" class which contains a product ID.
+     */
+    private void removeProducts()
+    {
+        stock.removeProduct(110);
+    }
+    
+
+        
 }

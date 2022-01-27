@@ -21,7 +21,7 @@ public class ModuleMark
     
     public int getValue()
     {
-        return mark;
+        return mark; 
     }
     
     /**
